@@ -47,19 +47,30 @@ Backpropagation is implemented in two key parts of the project:
 
    ```python
    model.fit(...)
+   ``` 
 TensorFlow automatically performs:
 
-Forward pass
-Loss computation
-Backward pass (backpropagation)
-Weight updates using gradients
-```   
+•Forward pass
+•Loss computation
+•Backward pass (backpropagation)
+•Weight updates using gradients
+
+2. Explicit Gradient Computation, Using:
+ ```python
+tf.GradientTape()
+ ```
+This section computes explicitly the gradients of the loss function w.r.t. to the model parameters. It is a way to illustrate internally the workings of backpropagation. 
+
+## Reproducibility
+
+The project is designed to be fully reproducible:
+
+Clear dataset structure is provided
+Code runs end-to-end without modification
+All dependencies are listed in requirements.txt
+
+
 ## Installation
 ```bash
 pip install -r requirements.txt
 
-###Where is Backpropagation Shown?
-
-Backpropagation is implemented in two key parts of the project:
-
-1. Model Training
