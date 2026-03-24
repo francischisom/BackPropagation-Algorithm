@@ -1,5 +1,3 @@
-# BackPropagation-Algorithm
-
 # Backpropagation in CNNs Using Heart/Lung Audio Classification
 
 ## Overview
