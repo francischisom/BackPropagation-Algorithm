@@ -1,6 +1,6 @@
 # BackPropagation-Algorithm
 
-# Backpropagation in CNNs for Audio Classification
+# Backpropagation in CNNs Using Heart/Lung Audio Classification
 
 ## Overview
 This project shows training a Convolutional Neural Network (CNN) using backpropagation to classify audio. Audio signals are first converted to Mel-spectrograms to be used as input for the model.
@@ -17,7 +17,7 @@ The dataset consists of:
 These are stored as ⁠ .wav ⁠ files and come with a corresponding metadata CSV file.
 
 ### Dataset Source
-Our dataset is based on some public biomedical audio datasets that are used for heart and lung sounds classification in many researches and educational works.
+The dataset is based on some public biomedical audio datasets that are used for heart and lung sounds classification in many researches and educational works.
 
 https://archive.ics.uci.edu/dataset/1202/hls-cmds:+heart+and+lung+sounds+dataset+recorded+from+a+clinical+manikin+using+digital+stethoscope
 
