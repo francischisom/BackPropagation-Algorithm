@@ -3,16 +3,36 @@
 ## Overview
 This project shows training a Convolutional Neural Network (CNN) using backpropagation to classify audio. Audio signals are first converted to Mel-spectrograms to be used as input for the model.
 
-## Objective
-In this project i will explain and implement the backpropagation algorithm using a deep learning framework to classify audio files.
+## Learning Objectives
+- Understand the role of backpropagation in deep learning
+- Explore how CNNs learn from spectrogram-based audio features
+- Implement and train a CNN using TensorFlow
+- Interpret training results and model performance
 
-## Dataset
-The dataset consists of:
-•⁠  ⁠Heart sounds (HS)
-•⁠  ⁠Lung sounds (LS)
-•⁠  ⁠Mixed sounds (Mix)
+## Dataset Description
 
-These are stored as ⁠ .wav ⁠ files and come with a corresponding metadata CSV file.
+The dataset consists of three categories of audio signals:
+- Heart sounds (HS)
+- Lung sounds (LS)
+- Mixed sounds (Mix)
+
+Each category is accompanied by a metadata CSV file containing identifiers for the corresponding audio files.
+
+### Data Representation
+
+Rather than feeding raw audio signals directly into the neural network, each audio file is converted into a Mel-spectrogram. This transformation converts time-series audio into a two-dimensional representation of frequency content over time.
+
+This approach enables the use of Convolutional Neural Networks, which are highly effective for extracting spatial features from image-like inputs.
+
+### Expected Folder Structure
+
+ML_project/
+├── HS/
+├── LS/
+├── Mix/
+├── HS.csv
+├── LS.csv
+└── Mix.csv
 
 ### Dataset Source
 The dataset is based on some public biomedical audio datasets that are used for heart and lung sounds classification in many researches and educational works.
