@@ -24,16 +24,6 @@ Rather than feeding raw audio signals directly into the neural network, each aud
 
 This approach enables the use of Convolutional Neural Networks, which are highly effective for extracting spatial features from image-like inputs.
 
-### Expected Folder Structure
-
-ML_project/
-├── HS/
-├── LS/
-├── Mix/
-├── HS.csv
-├── LS.csv
-└── Mix.csv
-
 ### Dataset Source
 The dataset is based on some public biomedical audio datasets that are used for heart and lung sounds classification in many researches and educational works.
 
@@ -55,7 +45,6 @@ The dataset is not included in this repository because:
 •⁠  ⁠GitHub restricts files larger than 100MB
 •⁠  ⁠Including large datasets reduces repository performance and usability
 
-This is a skeleton project. What this means is that this folder structure has been created so that you can copy this project.
 
 ## Where is Backpropagation Shown?
 
