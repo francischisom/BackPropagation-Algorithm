@@ -83,9 +83,33 @@ This section computes explicitly the gradients of the loss function w.r.t. to th
 
 The project is designed to be fully reproducible:
 
-Clear dataset structure is provided
-Code runs end-to-end without modification
-All dependencies are listed in requirements.txt
+•Clear dataset structure is provided
+•Code runs end-to-end without modification
+•All dependencies are listed in requirements.txt
+
+
+## References
+
+- Goodfellow, I., Bengio, Y., & Courville, A. – *Deep Learning*  
+  https://www.deeplearningbook.org/
+
+- Stanford CS231n – Convolutional Neural Networks  
+  https://cs231n.github.io/convolutional-networks/
+
+- TensorFlow Documentation  
+  https://www.tensorflow.org/
+
+- Librosa Documentation  
+  https://librosa.org/doc/latest/index.html
+
+- PhysioNet – Biomedical Signal Database  
+  https://physionet.org/
+
+- Towards Data Science – Backpropagation Explained  
+  https://towardsdatascience.com/backpropagation-explained-very-simply-2f8e4ed7e8e3
+
+- Understanding Mel Spectrograms  
+  https://towardsdatascience.com/mel-spectrograms-explained-5c1c5d5a16f8
 
 
 ## Installation
