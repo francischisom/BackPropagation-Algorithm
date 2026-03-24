@@ -19,7 +19,7 @@ These are stored as ⁠ .wav ⁠ files and come with a corresponding metadat
 ### Dataset Source
 Our dataset is based on some public biomedical audio datasets that are used for heart and lung sounds classification in many researches and educational works.
 
-[link:](https://archive.ics.uci.edu/dataset/1202/hls-cmds:+heart+and+lung+sounds+dataset+recorded+from+a+clinical+manikin+using+digital+stethoscope)
+https://archive.ics.uci.edu/dataset/1202/hls-cmds:+heart+and+lung+sounds+dataset+recorded+from+a+clinical+manikin+using+digital+stethoscope
 
 
 ### Dataset Structure
