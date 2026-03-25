@@ -68,6 +68,25 @@ tf.GradientTape()
  ```
 This section computes explicitly the gradients of the loss function w.r.t. to the model parameters. It is a way to illustrate internally the workings of backpropagation. 
 
+## Running on Google Colab
+
+This project can be executed using Google Colab, which provides a cloud-based environment with pre-installed machine learning libraries.
+
+### Step 1: Open the Notebook in Colab
+
+Click the button below to open the notebook directly:
+
+https://colab.research.google.com/drive/1vb2nL_HwQx-zJSVjFPok0AUv2aDgMEWc#scrollTo=aad5120c
+
+### Step 2: Mount Google Drive
+
+Since the dataset is downloaded and stored locally, you need to mount Google Drive:
+
+```python
+from google.colab import drive
+drive.mount('/content/drive')
+```
+
 ## Reproducibility
 
 The project is designed to be fully reproducible:
