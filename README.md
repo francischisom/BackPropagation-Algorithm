@@ -1,7 +1,7 @@
 # Backpropagation in CNNs Using Heart/Lung Audio Classification
 
 ## Overview
-This project shows training a Convolutional Neural Network (CNN) using backpropagation to classify audio. Audio signals are first converted to Mel-spectrograms to be used as input for the model.
+This project shows training a Convolutional Neural Network (CNN) using backpropagation to classify audio. This audio signals are first converted to Mel-spectrograms to be used as input for the model.
 
 ## Learning Objectives
 - Understand the role of backpropagation in deep learning
@@ -46,14 +46,14 @@ The dataset is not included in this repository because:
 •⁠  ⁠Including large datasets reduces repository performance and usability
 
 
-## Where is Backpropagation Shown?
+## Where Backpropagation is Shown
 
 Backpropagation is implemented in two key parts of the project:
 
-1. Model Training
+1. Model Training:
 
    ```python
-   model.fit(...)
+   history = model.fit(...)
    ``` 
 TensorFlow automatically performs:
 
@@ -62,11 +62,21 @@ TensorFlow automatically performs:
 •Backward pass (backpropagation)
 •Weight updates using gradients
 
-2. Explicit Gradient Computation, Using:
+
+2. Through Explicit Gradient Computation: 
+   
  ```python
-tf.GradientTape()
+with tf.GradientTape() as tape:
+    predictions = model(x_batch, training=True)
+    loss_value = loss_fn(y_batch, predictions)
+
+gradients = tape.gradient(loss_value, model.trainable_variables)
  ```
-This section computes explicitly the gradients of the loss function w.r.t. to the model parameters. It is a way to illustrate internally the workings of backpropagation. 
+This section computes explicitly the gradients of the loss function with respect to the model parameters. It is a way to illustrate internally the workings of backpropagation. 
+
+## Project Workflow
+
+Audio Files → Preprocessing → Mel-Spectrogram Extraction → CNN Model → Training with Backpropagation → Evaluation
 
 ## Running on Google Colab
 
@@ -86,6 +96,31 @@ Since the dataset is downloaded and stored locally, you need to mount Google Dri
 from google.colab import drive
 drive.mount('/content/drive')
 ```
+### Step 3:
+Store the dataset in Google Drive using this structure:
+ML_project/
+├── HS/
+├── LS/
+├── Mix/
+├── HS.csv
+├── LS.csv
+└── Mix.csv
+
+### Step 4
+
+Set the dataset path inside the notebook:
+
+ ```python
+DATA_DIR = '/content/drive/MyDrive/ML_project'
+```
+
+### Step 5:
+
+Run all cells from top to bottom.
+
+## Google Colab Vs Jupyter Notebook:
+
+This project was implemented using Google Colab due to its cloud-based environment, which provides pre-installed deep learning libraries, GPU support, and seamless integration with Google Drive, Which ensures reproducibility, ease of execution, and efficient handling of audio data, making it more suitable than a local Jupyter environment for this task.
 
 ## Reproducibility
 
@@ -94,6 +129,8 @@ The project is designed to be fully reproducible:
 •Clear dataset structure is provided
 •Code runs end-to-end without modification
 •All dependencies are listed in requirements.txt
+
+
 
 
 ## References
