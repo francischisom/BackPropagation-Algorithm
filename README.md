@@ -127,7 +127,9 @@ This project was implemented using Google Colab due to its cloud-based environme
 The project is designed to be fully reproducible:
 
 •Clear dataset structure is provided
+
 •Code runs end-to-end without modification
+
 •All dependencies are listed in requirements.txt
 
 
