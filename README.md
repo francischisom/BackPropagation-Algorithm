@@ -122,6 +122,10 @@ Run all cells from top to bottom.
 
 This project was implemented using Google Colab due to its cloud-based environment, which provides pre-installed deep learning libraries, GPU support, and seamless integration with Google Drive, Which ensures reproducibility, ease of execution, and efficient handling of audio data, making it more suitable than a local Jupyter environment for this task.
 
+## Installation
+```bash
+pip install -r requirements.txt
+```
 ## Reproducibility
 
 The project is designed to be fully reproducible:
@@ -160,6 +164,3 @@ The project is designed to be fully reproducible:
 
 
 ## Installation
-```bash
-pip install -r requirements.txt
-
